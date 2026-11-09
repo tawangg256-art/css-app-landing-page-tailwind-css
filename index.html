@@ -1,84 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Acme App</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-    <body class="bg-[#f7f7fb] min-h-screen flex items-center justify-center">
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acme Hero Section - Darker Purple</title>
+  <!-- นำเข้า Tailwind CSS ผ่าน CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#f4f4f9] min-h-screen text-[#18181b] font-sans antialiased">
 
-      <!-- Main Container -->
-      <main class="flex gap-3 max-w-5xl w-full px-4">
+  <!-- Container หลักครอบทั้งหน้าจอ -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
     
-        <!-- Card 1 -->
-        <div class="flex-1 bg-[#dce5f5] rounded-2xl p-[18px]">
-          <div class="w-10 h-10 bg-white/70 rounded-xl flex items-center justify-center mb-6">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-              viewBox="0 0 24 24" fill="none" stroke="#6045ff"
-              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.06 2.06 0 0 0-2.91-.09z"/>
-              <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/>
-              <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/>
-              <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/>
-            </svg>
-          </div>
-    
-          <h3 class="text-base font-semibold text-[#202033] mb-1">
-            Streamlined Workflows
-          </h3>
-    
-          <p class="text-[11px] leading-[16px] text-[#55576b]">
-            Automate repetitive tasks and focus on high-impact work with our powerful productivity features.
-          </p>
-        </div>
-    
-        <!-- Card 2 -->
-        <div class="flex-1 bg-[#dfe2fb] rounded-2xl p-[18px]">
-          <div class="w-10 h-10 bg-white/70 rounded-xl flex items-center justify-center mb-6">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-              viewBox="0 0 24 24" fill="none" stroke="#6045ff"
-              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M3 3h18v14H3z"/>
-              <path d="M7 21h10"/>
-              <path d="M12 17v4"/>
-              <path d="m7 8 3 3 3-3 3 3"/>
-            </svg>
-          </div>
-    
-          <h3 class="text-base font-semibold text-[#202033] mb-1">
-            Blazing Fast Performance
-          </h3>
-    
-          <p class="text-[11px] leading-[16px] text-[#55576b]">
-            Experience lightning-fast performance and instant responsiveness with our cutting-edge technology.
-          </p>
-        </div>
-    
-        <!-- Card 3 -->
-        <div class="flex-1 bg-[#e9e0f5] rounded-2xl p-[18px]">
-          <div class="w-10 h-10 bg-white/70 rounded-xl flex items-center justify-center mb-6">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-              viewBox="0 0 24 24" fill="#6045ff" stroke="#6045ff"
-              stroke-width="1.5">
-              <circle cx="12" cy="12" r="9"/>
-              <circle cx="9" cy="10" r="1" fill="white" stroke="none"/>
-              <circle cx="15" cy="10" r="1" fill="white" stroke="none"/>
-              <path d="M8.5 14c1.5 2 5.5 2 7 0" fill="none" stroke="white" stroke-linecap="round"/>
-            </svg>
-          </div>
-    
-          <h3 class="text-base font-semibold text-[#202033] mb-1">
-            Intuitive Interface
-          </h3>
-    
-          <p class="text-[11px] leading-[16px] text-[#55576b]">
-            Our user-friendly interface makes it easy for anyone to streamline their workflow.
-          </p>
-        </div>
-    
-      </main>
-    
-    </body>
+    <!-- 1. NAVIGATION BAR -->
+    <header class="bg-white rounded-full shadow-sm px-8 py-4 flex items-center justify-between">
+      <!-- โลโก้ Acme -->
+      <div class="flex items-center">
+        <span class="text-2xl font-extrabold tracking-tight text-black">
+          Acme<span class="text-[#4338ca] inline-block ml-0.5">.</span>
+        </span>
+      </div>
+
+      <!-- เมนูนำทางด้านขวา -->
+      <nav class="flex items-center space-x-8 font-medium text-sm">
+        <a href="#" class="text-[#4338ca] underline underline-offset-4 decoration-2 font-semibold">Home</a>
+        <a href="#" class="text-gray-700 hover:text-black transition">Features</a>
+        <a href="#" class="text-gray-700 hover:text-black transition">Pricing</a>
+        <a href="#" class="text-gray-700 hover:text-black transition">Contact</a>
+      </nav>
+    </header>
+
+    <!-- 2. HERO SECTION -->
+    <main class="flex flex-col items-center justify-center text-center mt-20 md:mt-28 px-4 pb-16">
+      
+      <!-- Badge แสดงแท็ก Acme Productivity App -->
+      <div class="inline-flex items-center gap-2 bg-[#e0e7ff] border border-[#c7d2fe] text-[#4338ca] px-4 py-1.5 rounded-full text-sm font-semibold mb-8">
+        <span>🌈</span>
+        <span>Acme Productivity App</span>
+      </div>
+
+      <!-- หัวข้อหลัก (Main Heading) -->
+      <h1 class="text-5xl sm:text-6xl md:text-7xl font-extrabold tracking-tight leading-tight text-[#111827] max-w-4xl">
+        Boost Your <span class="text-[#4338ca]">Product</span>ivity
+      </h1>
+
+      <!-- คำอธิบายย่อย (Subheading) -->
+      <p class="mt-6 text-lg sm:text-xl text-gray-700 font-medium max-w-2xl">
+        Streamline your workflow with our all-in-one productivity app.
+      </p>
+
+      <!-- ปุ่ม Call to Action (Start Free Trial) -->
+      <div class="mt-8">
+        <button class="bg-[#1e1b2e] hover:bg-[#2e2a45] text-white px-7 py-3.5 rounded-xl font-medium text-sm shadow-md transition duration-200">
+          Start Free Trial
+        </button>
+      </div>
+
+    </main>
+
+  </div>
+
+</body>
 </html>
